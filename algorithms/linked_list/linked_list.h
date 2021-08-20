@@ -10,6 +10,7 @@ class Linked_list
 private:
 	Node* first;
 	Node* last;
+	friend class Stack;
 public:
 	int length;
 	Linked_list();
