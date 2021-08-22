@@ -37,3 +37,16 @@ void Queue_array::display() {
 	}
 	std::cout << q[rear] << std::endl;
 }
+Queue::Queue() {
+	list = new Linked_list;
+}
+void Queue::enqueue(int value) {
+	list->push_back(value);
+}
+int Queue::dequeue() {
+	int x = list->remove(1);
+	return x;
+}
+void Queue::display() {
+	list->display();
+}

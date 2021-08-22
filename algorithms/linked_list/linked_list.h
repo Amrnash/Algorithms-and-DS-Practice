@@ -11,6 +11,7 @@ private:
 	Node* first;
 	Node* last;
 	friend class Stack;
+	friend class Queue;
 public:
 	int length;
 	Linked_list();

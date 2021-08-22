@@ -83,10 +83,18 @@ void Linked_list::insert(int pos, int value) {
 	}
 }
 void Linked_list::push_back(int value) {
-	Node* new_node = new Node;
-	new_node->value = value;
-	last->next = new_node;
-	last = last->next;
+	if ((first == nullptr) && (last == nullptr)) {
+		Node* new_node = new Node;
+		new_node->value = value;
+		first = new_node;
+		last = first;
+	}
+	else {
+		Node* new_node = new Node;
+		new_node->value = value;
+		last->next = new_node;
+		last = last->next;
+	}
 }
 int Linked_list::remove(int pos) {
 	if (pos < 1) return -1;

@@ -12,4 +12,12 @@ public:
 	int dequeue();
 	void display();
 };
-
+class Queue
+{
+	Linked_list* list;
+public:
+	Queue();
+	void enqueue(int value);
+	int dequeue();
+	void display();
+};

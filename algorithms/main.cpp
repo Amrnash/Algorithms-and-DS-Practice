@@ -4,14 +4,10 @@
 
 int main() {
 
-	Queue_array q(5);
+	Queue q;
 	q.enqueue(1);
 	q.enqueue(2);
 	q.enqueue(3);
-	q.enqueue(4);
-	q.dequeue();
-	q.dequeue();
-	q.dequeue();
 	q.dequeue();
 	q.display();
 }
