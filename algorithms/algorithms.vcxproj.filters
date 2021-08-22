@@ -39,6 +39,9 @@
     <ClCompile Include="stack\stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="queue\queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matrices\diagonal.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stack\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue\queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

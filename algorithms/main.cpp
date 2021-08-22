@@ -1,9 +1,17 @@
 #include <iostream>
-#include "./linked_list/linked_list.h"
-#include "./stack/stack.h"
+#include "./queue/queue.h"
+
 
 int main() {
 
-	Stack s1;
-	s1.display();
+	Queue_array q(5);
+	q.enqueue(1);
+	q.enqueue(2);
+	q.enqueue(3);
+	q.enqueue(4);
+	q.dequeue();
+	q.dequeue();
+	q.dequeue();
+	q.dequeue();
+	q.display();
 }

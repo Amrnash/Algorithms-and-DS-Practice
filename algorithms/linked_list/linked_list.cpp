@@ -3,10 +3,7 @@
 
 Node::Node() : value{ 0 }, next{nullptr} {}
 
-Linked_list::Linked_list() : length{ 1 } {
-	first = new Node;
-	last = first;
-}
+Linked_list::Linked_list() : length{ 0 }, first{ nullptr }, last{nullptr} {}
 Linked_list::Linked_list(Node* first, Node* last) : length{1} {
 	this->first = first;
 	this->last = last;

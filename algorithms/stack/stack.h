@@ -10,6 +10,7 @@ public:
 	int length;
 	void push(int value);
 	int pop();
+	int get_top();
 	void display();
 };
 

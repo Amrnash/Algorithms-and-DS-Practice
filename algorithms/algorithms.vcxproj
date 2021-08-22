@@ -152,6 +152,7 @@
     <ClCompile Include="matrices\diagonal.cpp" />
     <ClCompile Include="matrices\lower_triangular.cpp" />
     <ClCompile Include="matrices\upper_triangular.cpp" />
+    <ClCompile Include="queue\queue.cpp" />
     <ClCompile Include="stack\stack.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="matrices\diagonal.h" />
     <ClInclude Include="matrices\lower_triangular.h" />
     <ClInclude Include="matrices\upper_triangular.h" />
+    <ClInclude Include="queue\queue.h" />
     <ClInclude Include="stack\stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -12,8 +12,12 @@ void Stack::push(int value) {
 }
 int Stack::pop() {
 	int x = list->remove(1);
+	top = list->first;
 	return x;
 }
 void Stack::display() {
 	list->display();
+}
+int Stack::get_top() {
+	return top->value;
 }
