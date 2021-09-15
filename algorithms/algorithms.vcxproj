@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="array_adt\array_adt.cpp" />
     <ClCompile Include="array_adt\utils.cpp" />
+    <ClCompile Include="trees\BinaryTree.cpp" />
     <ClCompile Include="linked_list\linked_list.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrices\diagonal.cpp" />
@@ -158,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="array_adt\array_adt.h" />
     <ClInclude Include="array_adt\utils.h" />
+    <ClInclude Include="trees\BinaryTree.h" />
     <ClInclude Include="linked_list\linked_list.h" />
     <ClInclude Include="matrices\diagonal.h" />
     <ClInclude Include="matrices\lower_triangular.h" />

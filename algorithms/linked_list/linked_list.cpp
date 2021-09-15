@@ -88,22 +88,40 @@ void Linked_list::push_back(int value) {
 		new_node->value = value;
 		first = new_node;
 		last = first;
+		length++;
 	}
 	else {
 		Node* new_node = new Node;
 		new_node->value = value;
 		last->next = new_node;
 		last = last->next;
+		length++;
 	}
 }
 int Linked_list::remove(int pos) {
 	if (pos < 1) return -1;
 	if (pos == 1) {
-		Node* p = first;
-		first = first->next;
-		int x = p->value;
-		delete p;
-		return x;
+		/*
+		* this is a temporary fix to handle the case when there is only element in the list
+		* i will update the methods to change the length value when adding or removing elements
+		*/ 
+		if (first->next == nullptr) {
+			last = nullptr;
+			int x = first->value;
+			delete first;
+			first = last;
+			length--;
+			return x;
+		}
+		//--------------------------
+		else {
+			Node* p = first;
+			first = first->next;
+			int x = p->value;
+			delete p;
+			length--;
+			return x;
+		}
 	}
 	else {
 		Node* p = first;

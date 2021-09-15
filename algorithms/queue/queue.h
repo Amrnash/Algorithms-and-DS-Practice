@@ -20,4 +20,5 @@ public:
 	void enqueue(int value);
 	int dequeue();
 	void display();
+	bool isEmpty();
 };

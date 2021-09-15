@@ -1,13 +1,9 @@
 #include <iostream>
-#include "./queue/queue.h"
+#include "./trees/BinaryTree.h"
 
 
 int main() {
 
-	Queue q;
-	q.enqueue(1);
-	q.enqueue(2);
-	q.enqueue(3);
-	q.dequeue();
-	q.display();
+	BinaryTree tree;
+	tree.create();
 }
