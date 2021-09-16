@@ -1,10 +1,11 @@
 #include <iostream>
 #include "./trees/BinaryTree.h"
-
+#include "./trees/BST.h"
 
 int main() {
 
-	BinaryTree tree;
+	BST tree;
 	tree.create();
-	tree.level_order();
+	auto node = tree.Isearch(3);
+	std::cout << "value is: " << node->value << std::endl;
 }

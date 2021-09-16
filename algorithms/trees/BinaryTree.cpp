@@ -1,5 +1,6 @@
 #include "BinaryTree.h"
 #include <iostream>
+#include <iomanip>
 TreeNode::TreeNode() : left_child{ nullptr }, right_child{ nullptr }, value{0}{}
 void BinaryTree::create() {
 	TreeNode* p, * t;
@@ -33,7 +34,7 @@ void BinaryTree::create() {
 void BinaryTree::level_order() {
 	TreeNode* p = root;
 	Queue q;
-	std::cout << p->value << std::endl;
+	std::cout << p->value <<std::endl;
 	q.enqueue(reinterpret_cast<int>(p));
 	while (!q.isEmpty()) {
 		p = reinterpret_cast<TreeNode*>(q.dequeue());

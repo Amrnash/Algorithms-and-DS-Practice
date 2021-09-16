@@ -45,6 +45,9 @@
     <ClCompile Include="trees\BinaryTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="trees\BST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matrices\diagonal.h">
@@ -72,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="trees\BinaryTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trees\BST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
