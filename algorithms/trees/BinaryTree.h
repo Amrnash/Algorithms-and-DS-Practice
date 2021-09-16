@@ -15,5 +15,6 @@ class BinaryTree
 	TreeNode* root;
 public:
 	void create();
+	void level_order();
 };
 

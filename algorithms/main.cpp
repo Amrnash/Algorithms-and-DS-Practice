@@ -6,4 +6,5 @@ int main() {
 
 	BinaryTree tree;
 	tree.create();
+	tree.level_order();
 }

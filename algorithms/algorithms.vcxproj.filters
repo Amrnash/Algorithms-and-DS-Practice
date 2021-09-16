@@ -75,4 +75,32 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\algorithms.exe.recipe" />
+    <None Include="Debug\algorithms.ilk" />
+    <None Include="Debug\vc142.idb" />
+    <None Include="Debug\vc142.pdb" />
+    <None Include="Debug\algorithms.tlog\algorithms.lastbuildstate" />
+    <None Include="Debug\algorithms.tlog\CL.command.1.tlog" />
+    <None Include="Debug\algorithms.tlog\CL.read.1.tlog" />
+    <None Include="Debug\algorithms.tlog\CL.write.1.tlog" />
+    <None Include="Debug\algorithms.tlog\link.command.1.tlog" />
+    <None Include="Debug\algorithms.tlog\link.read.1.tlog" />
+    <None Include="Debug\algorithms.tlog\link.write.1.tlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Debug\algorithms.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Debug\array_adt.obj" />
+    <Object Include="Debug\BinaryTree.obj" />
+    <Object Include="Debug\diagonal.obj" />
+    <Object Include="Debug\linked_list.obj" />
+    <Object Include="Debug\lower_triangular.obj" />
+    <Object Include="Debug\main.obj" />
+    <Object Include="Debug\queue.obj" />
+    <Object Include="Debug\stack.obj" />
+    <Object Include="Debug\upper_triangular.obj" />
+    <Object Include="Debug\utils.obj" />
+  </ItemGroup>
 </Project>

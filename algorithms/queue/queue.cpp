@@ -45,7 +45,6 @@ void Queue::enqueue(int value) {
 }
 int Queue::dequeue() {
 	int x = list->remove(1);
-	list->length--;
 	return x;
 }
 void Queue::display() {

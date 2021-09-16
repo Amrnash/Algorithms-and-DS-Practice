@@ -19,7 +19,6 @@ void BinaryTree::create() {
 			t->value = x;
 			p->left_child = t;
 			q.enqueue(reinterpret_cast<int>(t));
-			q.display();
 		}
 		std::cout << "Enter a right child" << std::endl;
 		std::cin >> x;
@@ -28,7 +27,23 @@ void BinaryTree::create() {
 			t->value = x;
 			p->right_child = t;
 			q.enqueue(reinterpret_cast<int>(t));
-			q.display();
+		}
+	}
+}
+void BinaryTree::level_order() {
+	TreeNode* p = root;
+	Queue q;
+	std::cout << p->value << std::endl;
+	q.enqueue(reinterpret_cast<int>(p));
+	while (!q.isEmpty()) {
+		p = reinterpret_cast<TreeNode*>(q.dequeue());
+		if (p->left_child != nullptr) {
+			q.enqueue(reinterpret_cast<int>(p->left_child));
+			std::cout << p->left_child->value << " ";
+		}
+		if (p->right_child != nullptr) {
+			q.enqueue(reinterpret_cast<int>(p->right_child));
+			std::cout << p->right_child->value << " ";
 		}
 	}
 }
